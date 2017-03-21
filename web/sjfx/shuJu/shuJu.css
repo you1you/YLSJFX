@@ -1,0 +1,49 @@
+div#divCx4Da {
+    top: 36px;
+    z-index: 10;
+    width:400px;
+}
+
+table#tblFrmKh_gw tr:first-child td{
+    border-top-width: 0;
+}
+
+table#tblFrmKh_gw tr:last-child td{
+    border-bottom-width: 0;
+}
+
+table#tblFrmKh_gw td{
+    width: 20%;
+}
+
+input[type=password] {
+    border: 0;
+    width:200px;
+    border-bottom: 1px solid #065E9E;
+    background-color: transparent;
+}
+
+.fileInputContainer{
+	height:32px;
+	background:url(../../images/file.png) no-repeat;
+	background-size:30px 30px;
+	position:relative;
+	/*margin-left: 100px;*/
+	width: 100%;
+}
+.fileInput{
+	overflow: hidden;
+	position:relative;
+	left:0;
+	top:0;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	width: 30px;
+	cursor:pointer;
+	background-size:30px 30px;
+}
+#fileText{
+	position: relative;
+	width: 200px;
+	/*height: 30px;*/
+}

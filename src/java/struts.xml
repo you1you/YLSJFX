@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring"/> 
+	<!-- spring 托管 --> <!-- 指定Struts的工厂类 -->  
+	<constant name="struts.ui.theme" value="simple"/> 
+	<!-- 默认的视图主题 --> 
+	<constant name="struts.action.extension" value="do"/>
+	<!-- 设置url请求后缀 --><!--action的动作请求设为。do-->
+	<constant name="struts.locale" value="zh_CN"/>
+	<!-- 设置默认的locale和字符编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<!--编码格式-->
+	<constant name="struts.devMode" value="true"/>			
+	<!--设为开发模式，如果发布后，就要设为false-->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+	<!-- 自动动态方法的调用，使用这个设置后可以这样调用：action!method -->
+	<constant name="struts.i18n.reload" value="true"/>
+	<!-- 指定每次请求到达，重新加载资源文件 -->
+	<constant name="struts.objectFactory.spring.autoWire" value="name"/>
+	<!-- 指定spring框架的装配模式，装配方式有: name, type, auto, and constructor (name 是默认装配模式) --> 
+	<constant name="struts.serve.static.browserCache" value="false"/>
+	<!-- 设置浏览器是否缓存静态内容,默认值为true(生产环境下使用),开发阶段最好关闭 -->
+	<constant name="struts.url.includeParams" value="none"/>
+	<!--指定Struts 2生成URL时是否包含请求参数。该属性接受none、get和all三个属性值，分别对应于不包含、仅包含GET类型请求参数和包含全部请求参数-->
+	
+	<include file="struts-default.xml"/>
+	<include file="struts-ShuJuFx-yongHu.xml"/>
+</struts>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.sjfx.model.DataModel" table="YLData">
+    <id name="inpatientNumber" type="java.lang.String">
+      <column name="住院号"/>
+    </id>
+    <property name="area" type="java.lang.String">
+      <column name="区域"/>
+    </property>
+    <property name="outDepartment" type="java.lang.String">
+      <column name="出院科室"/>
+    </property>
+    <property name="name" type="java.lang.String">
+      <column name="病人名字"/>
+    </property>
+    <property name="sex" type="java.lang.String">
+      <column name="性别"/>
+    </property>
+    <property name="age" type="java.lang.Integer">
+      <column name="年龄"/>
+    </property>
+    <property name="outDiagnosis" type="java.lang.String">
+      <column name="出院诊断"/>
+    </property>
+    <property name="outDate" type="java.util.Date">
+      <column name="出院日期"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	
+	<package name="YongHu" namespace="/yh" extends="struts-default">
+		<global-results>
+			<result name="reLogin">/reLogin.html</result>
+		</global-results>
+
+		<action name="zm"							class="YongHuAction"						method="zhuoMian">
+			<result name="success">/sjfx/zhuoMian/frame.html</result>
+		</action>
+		<action name="ht"							class="YongHuAction"						method="hengTiao">
+			<result name="success">/sjfx/zhuoMian/biaoTi.jsp</result>
+		</action>
+		<action name="cd"							class="YongHuAction"						method="caiDan">
+			<result name="success">/sjfx/zhuoMian/caiDan.html</result>
+		</action>
+		
+		<action name="yuanGong"						class="YongHuAction"						method="yuanGong">
+			<result name="success">/sjfx/yuanGong/yuanGong.html</result>
+		</action>
+		<action name="checklogin"							class="YongHuAction"						method="checkLogin"></action>
+	</package>
+   	
+</struts>
+    	
+    	
+    	

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.sjfx.model.UserModel" table="user">
+    <id name="id">
+      <column length="32" name="id"/>
+      <generator class="uuid"/>
+      <!--<generator class="increment"/>-->
+    </id>
+    <property name="userName" type="java.lang.String">
+      <column name="userName"/>
+    </property>
+    <property name="password" type="java.lang.String">
+      <column name="password"/>
+    </property>
+    <property name="sex" type="java.lang.String">
+      <column name="sex"/>
+    </property>
+    <property name="dlm" type="java.lang.String">
+      <column name="dlm"/>
+    </property>
+    <property name="phone" type="java.lang.String">
+      <column name="phone"/>
+    </property>
+  </class>
+</hibernate-mapping>

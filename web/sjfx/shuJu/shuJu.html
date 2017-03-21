@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="shuJu.css" type="text/css"/>
+        <script type="text/javascript" src="../../js/jquery2.js"></script>
+		<script type="text/javascript" src="../../js/popMenu.js"></script>
+        <script type="text/javascript" src="../../js/luopan.list.js"></script>
+		<script type="text/javascript" src="shuJu.js"></script>
+	</head>
+	<body>
+		<div>
+		</div>
+		<table id="title">
+            <tr>
+                <td id="logo"></td>
+                <td id="pageTitle">
+<!--					<div class="fileInputContainer">
+						<input class="fileInput" type="file" onchange="start(this.files)" />
+						<label id="jinDu">100%</label>
+						<input id="fileText" type="text"/>
+					</div>-->
+				</td>
+            </tr>
+        </table>
+		<div style="width: 100%;">
+            <table id="tblDangAn" class="list" style="table-layout:fixed;width: 100%;">
+                <tr class="biaoTou">
+                    <td>
+                        区域
+                    </td>
+                    <td>
+                        出院科室
+                    </td>
+                    <td>
+                        住院号
+                    </td>
+                    <td>
+                        性别
+                    </td>
+                    <td>
+                        出院诊断
+                    </td>
+					<td>
+                        病人名字
+                    </td>
+					<td>
+                        出院日期
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+		<div id="divCx4Da" class="pop">
+            <table id="tblCx4Da" class="form">
+                <tr>
+                    <td style="width: 120px;" class="title">
+                        病人名称：
+                    </td>
+                    <td>
+                        <input type="text" id="tblCx4Da_qu" />
+                    </td>
+                </tr>
+				<tr>
+                    <td style="width: 120px;" class="title">
+                        病人区域：
+                    </td>
+                    <td>
+                        <input type="text" id="tblCx4Da_mc" />
+                    </td>
+                </tr>
+				<tr>
+                    <td style="width: 120px;" class="title">
+                        疾病名称：
+                    </td>
+                    <td>
+                        <input type="text" id="tblCx4Da_mc" />
+                    </td>
+                </tr>
+                <tr class="diBian">
+                    <td colspan="2">
+                        <input type="button" value="查询" onclick="javascript:cxDangAn()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="cd4Da" class="popMenu">
+            <ul>
+                <li id="drSj">
+                    导入数据
+                </li>
+                <li id="zjDa">
+                    添加数据
+                </li>
+                <li id="xgDa">
+                    修改数据
+                </li>
+				<li id="scDa">
+                    删除数据
+                </li>
+            </ul>
+        </div>
+
+		<div id="divFrmDa" class="pop">
+            <table id="tblFrmDa" class="form">
+                <tr>
+                    <td id="tblFrmDa_mc_lb" class="title" style="width: 150px;">
+                        文&ensp;件&ensp;名：
+						
+                    </td>
+                    <td>
+                        <!--<input type="text" id="tblFrmDa_mc" />-->
+						<div class="fileInputContainer">
+							<input class="fileInput" type="file" onchange="start(this.files)" />
+							<label id="tblFrmDa_mc"></label>
+							<label id="jinDu">100%</label>
+							<!--<input id="fileText" type="text"/>-->
+						</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tblFrmDa_bz_lb" class="title" style="width: 150px;">
+                        备&ensp;&ensp;&ensp;&ensp;注：
+                    </td>
+                    <td>
+                        <input type="text" id="tblFrmDa_bz" />
+                    </td>
+                </tr>
+                <tr class="diBian">
+                    <td colspan="4" style="text-align: center;">
+                        <input id="tblFrmKh_bc" type="button" value="保存"
+                               onclick="javascript:bcKeHu()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="board"></div>
+	</body>
+</html>

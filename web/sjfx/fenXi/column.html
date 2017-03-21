@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+        <link rel="stylesheet" href="column.css" type="text/css" />
+        <script type="text/javascript" src="../../js/jquery2.js"></script>
+        <script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="../../js/popMenu.js"></script>
+        <script type="text/javascript" src="../../js/luopan.form.js"></script>
+        <script type="text/javascript" src="../../js/luopan.list.js"></script>
+        <script type="text/javascript" src="../../js/ichart.1.2.1.beta.min.js"></script>
+        <script type="text/javascript" src="column.js"></script>
+    </head>
+    <body>
+        <table id="title">
+            <tr>
+                <td id="logo"></td>
+                <td id="pageTitle"></td>
+            </tr>
+        </table>
+
+        <div id="divCx4Colum" class="pop">
+            <table id="tblCx4Colum" class="form">
+                <tr>
+                    <td style="width: 120px;" class="title">
+                        客户名称：
+                    </td>
+                    <td>
+                        <input type="text" id="tblCx4Colum_mc" />
+                    </td>
+                </tr>
+                <tr class="diBian">
+                    <td colspan="2">
+                        <input type="button" value="查询" onclick="javascript:cxKeHu()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="canvasDiv" class="list" style="table-layout:fixed;width: 100%;"></div>
+        <div id="board"></div>
+    </body>
+</html>

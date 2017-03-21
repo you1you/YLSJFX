@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+        <link rel="stylesheet" href="keHu.css" type="text/css" />
+        <script type="text/javascript" src="../../js/jquery2.js"></script>
+        <script type="text/javascript" src="../../js/json2.js"></script>
+        <script type="text/javascript" src="../../js/popMenu.js"></script>
+
+        <script type="text/javascript" src="../../js/luopan.js"></script>
+        <script type="text/javascript" src="../../js/luopan.form.js"></script>
+        <script type="text/javascript" src="../../js/luopan.data.js"></script>
+        <script type="text/javascript" src="../../js/luopan.list.js"></script>
+        <script type="text/javascript" src="keHu.js"></script>
+    </head>
+    <body>
+        <table id="title">
+            <tr>
+                <td id="logo"></td>
+                <td id="pageTitle"></td>
+            </tr>
+        </table>
+
+        <div style="width: 100%;">
+            <table id="tblKehu" class="list" style="table-layout:fixed;width: 100%;">
+                <tr class="biaoTou">
+                    <td>
+                        用户名称
+                    </td>
+                    <td>
+                        性别
+                    </td>
+                    <td>
+                        密码
+                    </td>
+                    <td>
+                        联系方式
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="divCx4Kh" class="pop">
+            <table id="tblCx4Kh" class="form">
+                <tr>
+                    <td style="width: 120px;" class="title">
+                        客户名称：
+                    </td>
+                    <td>
+                        <input type="text" id="tblCx4Kh_mc" />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id="tblCx4Kh_xb_lb" class="title" >
+                        姓&ensp;&ensp;&ensp;&ensp;别：
+                    </td>
+                    <td>
+                        男<input type="radio" name="sex" value="man" >
+                        女<input type="radio" name="sex" value="woman" />
+                    </td>
+                </tr>
+                <tr class="diBian">
+                    <td colspan="2">
+                        <input type="button" value="查询" onclick="javascript:cxKeHu()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="cd4Kh" class="popMenu">
+            <ul>
+                <li id="zjKh">
+                    增加客户
+                </li>
+                <li id="xgKh">
+                    修改客户
+                </li>
+                <li id="scKh">
+                    删除客户
+                </li>
+            </ul>
+        </div>
+
+        <div id="divFrmKh" class="pop">
+            <table id="tblFrmKh" class="form">
+                <tr>
+                    <td id="tblFrmKh_mc_lb" class="title" >
+                        姓&ensp;&ensp;&ensp;&ensp;名：
+                    </td>
+                    <td>
+                        <input type="text" id="tblFrmKh_mc" />
+                    </td>
+
+                    <td id="tblFrmKh_xb_lb" class="title" >
+                        姓&ensp;&ensp;&ensp;&ensp;别：
+                    </td>
+                    <td>
+                        男<input type="radio" name="sex" value="man" checked="true">
+                        女<input type="radio" name="sex" value="woman" />
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td id="tblFrmKh_dlm_lb" class="title" >
+                        登&ensp;录&ensp;名：
+                    </td>
+                    <td>
+                        <input type="text" id="tblFrmKh_dlm" />
+                    </td>
+
+                    <td id="tblFrmKh_mm_lb" class="title">
+                        密&ensp;&ensp;&ensp;&ensp;码：
+                    </td>
+                    <td>
+                        <input type="password" id="tblFrmKh_mm" />
+                    </td>
+                </tr>
+                <tr>
+
+                    <td id="tblFrmKh_dlm_lb" class="title" >
+                        手机号码：
+                    </td>
+                    <td>
+                        <input type="text" id="tblFrmKh_lxfs" />
+                    </td>
+                </tr>
+
+                <tr class="diBian">
+                    <td colspan="4" style="text-align: center;">
+                        <input id="tblFrmKh_bc" type="button" value="保存"
+                               onclick="javascript:bcKeHu()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="board"></div>
+    </body>
+</html>

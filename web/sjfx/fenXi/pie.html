@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<!--<script type="text/javascript" src="jquery-3.0.0.js"></script> ��������ѡһ�������� -->
+<!--		<script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+		<script src="../../js/highcharts.js"></script>-->
+		<script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript" src="../../js/ichart.1.2.1.beta.min.js"></script>
+		<script>
+//			$(function () {
+//				$('#container').highcharts({
+//					chart: {
+//						plotBackgroundColor: null,
+//						plotBorderWidth: null,
+//						plotShadow: false
+//					},
+//					title: {
+//						text: 'Browser market shares at a specific website, 2010'
+//					},
+//					tooltip: {
+//						pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+//					},
+//					plotOptions: {
+//						pie: {
+//							allowPointSelect: true,
+//							cursor: 'pointer',
+//							dataLabels: {
+//								enabled: true,
+//								color: '#000000',
+//								connectorColor: '#000000',
+//								format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+//							}
+//						}
+//					},
+//					series: [{
+//							type: 'pie',
+//							name: 'Browser share',
+//							data: [
+//								['Firefox', 45.0],
+//								['IE', 26.8],
+//								{
+//									name: 'Chrome',
+//									y: 12.8,
+//									sliced: true,
+//									selected: true
+//								},
+//								['Safari', 8.5],
+//								['Opera', 6.2],
+//								['Others', 0.7]
+//							]
+//						}]
+//				});
+//			});
+			$(function () {
+				var data = [
+					{name: 'IE', value: 35.75, color: '#9d4a4a'},
+					{name: 'Chrome', value: 29.84, color: '#5d7f97'},
+					{name: 'Firefox', value: 24.88, color: '#97b3bc'},
+					{name: 'Safari', value: 6.77, color: '#a5aaaa'},
+					{name: 'Opera', value: 2.02, color: '#778088'},
+					{name: 'Other', value: 0.73, color: '#6f83a5'}
+				];
+
+				new iChart.Pie2D({
+					render: 'canvasDiv',
+					data: data,
+					title: 'Top 5 Browsers from 1 to 29 Feb 2012',
+					legend: {
+						enable: true
+					},
+					showpercent: true,
+					decimalsnum: 2,
+					width: 800,
+					height: 400,
+					radius: 140
+				}).draw();
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="canvasDiv"></div>
+		<!--<div id="container" style="min-width:800px;height:400px;"></div>-->
+	</body>
+</html>
