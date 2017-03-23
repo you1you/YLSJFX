@@ -21,6 +21,7 @@
 			<result name="success">/sjfx/yuanGong/yuanGong.html</result>
 		</action>
 		<action name="checklogin"							class="YongHuAction"						method="checkLogin"></action>
+        
 	</package>
    	
 </struts>

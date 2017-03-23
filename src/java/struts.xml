@@ -26,4 +26,5 @@
 	
 	<include file="struts-default.xml"/>
 	<include file="struts-ShuJuFx-yongHu.xml"/>
+    <include file="struts-ShuJuFx-keHu.xml"/>
 </struts>

@@ -55,6 +55,7 @@
 	
 	<bean id="sjfxDB"				class="com.sjfx.util.sjfxDB"/>
 	<bean id="YongHuAction"			class="com.sjfx.action.yongHu.YongHuAction"			scope="request"/>
+    <bean id="KeHuAction"           class="com.sjfx.action.keHu.KeHuAction"             scope="request"/>
 	
 	<context:component-scan base-package="com.sjfx.action"/>
 </beans>

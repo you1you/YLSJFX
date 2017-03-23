@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	
+	<package name="KeHu" namespace="/kh" extends="struts-default">
+		<global-results>
+			<result name="reLogin">/reLogin.html</result>
+		</global-results>
+        
+        <action name="addKeHu"							class="KeHuAction"						method="addKeHu"></action>
+        <action name="cxKeHu"							class="KeHuAction"						method="cxKeHu"></action>
+	</package>
+   	
+</struts>
+    	
+    	
+    	

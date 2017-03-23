@@ -20,12 +20,8 @@ public class YongHuAction extends SJFXAction{
 	private YongHu yongHu;
 	
 	public String checkLogin() {
-		System.out.println("111111111111111");
 		String dlm = jsonObj.optString("dlm","");
 		String mm = jsonObj.optString("mm","");
-		
-		 System.out.println(dlm);
-		 System.out.println(mm);
 		
 		JSONObject result = yongHu.dengLu(dlm, mm, request.getSession());
 		if (result.getInt("result")==0){

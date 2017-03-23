@@ -44,7 +44,7 @@ function cxKeHu() {
     json.xb = $("#tblCx4Kh input:radio[name=sex]").val();
     json = {"jsonObj": JSON.stringify(json)};
     $.ajax({
-        url: "cxKeHu.do",
+        url: "/YLSJFX/kh/cxKeHu.do",
         data: json,
         dataType: "json",
         type: "post",
@@ -148,7 +148,7 @@ function bcKeHu() {
             j.id = keHu.sz[keHu.seq].id;
         }
         j = {"jsonObj": JSON.stringify(j)};
-        var url = isEditKh ? "updateKeHu.do" : "addKeHu.do";
+        var url = isEditKh ? "/YLSJFX/kh/updateKeHu.do" : "/YLSJFX/kh/addKeHu.do";
         $.ajax({
             url: url,
             data: j,
