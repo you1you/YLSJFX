@@ -8,7 +8,7 @@ package com.sjfx.action.keHu;
 //import com.opensymphony.xwork2.ActionSupport;
 import com.sjfx.model.UserModel;
 import com.sjfx.util.ShuJuFX;
-import com.sjfx.util.SjfxDB;
+import com.sjfx.util.sjfxDB;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

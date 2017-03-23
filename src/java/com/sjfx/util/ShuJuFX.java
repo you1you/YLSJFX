@@ -13,5 +13,5 @@ import javax.annotation.Resource;
  */
 public class ShuJuFX {
   @Resource(name="sjfxDB")
-  protected SjfxDB dao;
+  protected sjfxDB dao;
 }
